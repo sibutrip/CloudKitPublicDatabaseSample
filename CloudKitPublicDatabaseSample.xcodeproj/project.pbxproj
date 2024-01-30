@@ -11,6 +11,7 @@
 		74CB1B9C2B694117005C7F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CB1B9B2B694117005C7F15 /* ContentView.swift */; };
 		74CB1B9E2B694118005C7F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CB1B9D2B694118005C7F15 /* Assets.xcassets */; };
 		74CB1BA12B694118005C7F15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CB1BA02B694118005C7F15 /* Preview Assets.xcassets */; };
+		74CB1BA82B6941E4005C7F15 /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CB1BA72B6941E4005C7F15 /* CloudKitService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		74CB1B9B2B694117005C7F15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74CB1B9D2B694118005C7F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CB1BA02B694118005C7F15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74CB1BA72B6941E4005C7F15 /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		74CB1BA92B6941FC005C7F15 /* CloudKitPublicDatabaseSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitPublicDatabaseSample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		74CB1B982B694117005C7F15 /* CloudKitPublicDatabaseSample */ = {
 			isa = PBXGroup;
 			children = (
+				74CB1BA92B6941FC005C7F15 /* CloudKitPublicDatabaseSample.entitlements */,
 				74CB1B992B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift */,
 				74CB1B9B2B694117005C7F15 /* ContentView.swift */,
+				74CB1BA72B6941E4005C7F15 /* CloudKitService.swift */,
 				74CB1B9D2B694118005C7F15 /* Assets.xcassets */,
 				74CB1B9F2B694118005C7F15 /* Preview Content */,
 			);
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CB1BA82B6941E4005C7F15 /* CloudKitService.swift in Sources */,
 				74CB1B9C2B694117005C7F15 /* ContentView.swift in Sources */,
 				74CB1B9A2B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift in Sources */,
 			);
@@ -269,6 +275,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudKitPublicDatabaseSample/CloudKitPublicDatabaseSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CloudKitPublicDatabaseSample/Preview Content\"";
@@ -298,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudKitPublicDatabaseSample/CloudKitPublicDatabaseSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CloudKitPublicDatabaseSample/Preview Content\"";
