@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D4EF1EC2B69586E00929C6A /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4EF1EB2B69586E00929C6A /* AddEventView.swift */; };
 		74CB1B9A2B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CB1B992B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift */; };
 		74CB1B9C2B694117005C7F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CB1B9B2B694117005C7F15 /* ContentView.swift */; };
 		74CB1B9E2B694118005C7F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CB1B9D2B694118005C7F15 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D4EF1EB2B69586E00929C6A /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		5D1FDA8A2B694420000D7EBA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		74CB1B962B694117005C7F15 /* CloudKitPublicDatabaseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitPublicDatabaseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CB1B992B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPublicDatabaseSampleApp.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				74CB1BA92B6941FC005C7F15 /* CloudKitPublicDatabaseSample.entitlements */,
 				74CB1B992B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift */,
 				74CB1B9B2B694117005C7F15 /* ContentView.swift */,
+				5D4EF1EB2B69586E00929C6A /* AddEventView.swift */,
 				74CB1BA72B6941E4005C7F15 /* CloudKitService.swift */,
 				74CB1BAC2B694B48005C7F15 /* EventViewModel.swift */,
 				74CB1BAA2B69427F005C7F15 /* Event.swift */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74CB1BA82B6941E4005C7F15 /* CloudKitService.swift in Sources */,
+				5D4EF1EC2B69586E00929C6A /* AddEventView.swift in Sources */,
 				74CB1B9C2B694117005C7F15 /* ContentView.swift in Sources */,
 				74CB1B9A2B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift in Sources */,
 				74CB1BAD2B694B48005C7F15 /* EventViewModel.swift in Sources */,
