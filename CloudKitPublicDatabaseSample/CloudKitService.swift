@@ -63,5 +63,11 @@ class CloudKitService {
         
         _ = try await database.modifyRecords(saving: [record], deleting: [])
     }
-    public func deleteEvent(_ event: Event) async throws { }
+    public func deleteEvent(_ event: Event) async throws {
+        guard let fetchedRecord = try? await database.record(for: .init(recordName: event.id)) else {
+            throw CloudKitServiceError.recordNotInDatabase
+        }
+        
+        _ = try await database.modifyRecords(saving: [], deleting: [fetchedRecord.recordID])
+    }
 }
