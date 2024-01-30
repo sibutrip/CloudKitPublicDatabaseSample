@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D1FDA8A2B694420000D7EBA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		74CB1B962B694117005C7F15 /* CloudKitPublicDatabaseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitPublicDatabaseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CB1B992B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPublicDatabaseSampleApp.swift; sourceTree = "<group>"; };
 		74CB1B9B2B694117005C7F15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		74CB1B8D2B694117005C7F15 = {
 			isa = PBXGroup;
 			children = (
+				5D1FDA8A2B694420000D7EBA /* README.md */,
 				74CB1B982B694117005C7F15 /* CloudKitPublicDatabaseSample */,
 				74CB1B972B694117005C7F15 /* Products */,
 			);
