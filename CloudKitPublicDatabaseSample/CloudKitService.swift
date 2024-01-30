@@ -8,11 +8,16 @@
 import CloudKit
 
 class CloudKitService {
+    
+    enum CloudKitServiceError: Error {
+        case recordNotInDatabase
+    }
+    
     let container = CKContainer(identifier: "iCloud.com.CoryTripathy.CloudKitShare")
     lazy var database = container.publicCloudDatabase
     
     public func saveEvent(_ event: Event) async throws {
-        let record = CKRecord(recordType: "Event")
+        let record = CKRecord(recordType: "Event", recordID: .init(recordName: event.id))
         record["title"] = event.title
         record["venue"] = event.venue
         record["description"] = event.description
@@ -46,6 +51,17 @@ class CloudKitService {
         return events
     }
     public func updateEvent(_ event: Event) async throws {
+        guard let fetchedRecord = try? await database.record(for: .init(recordName: event.id)) else {
+            throw CloudKitServiceError.recordNotInDatabase
+        }
+        
+        let record = CKRecord(recordType: "Event", recordID: fetchedRecord.recordID)
+        record["title"] = event.title
+        record["venue"] = event.venue
+        record["description"] = event.description
+        record["date"] = event.date
+        
+        _ = try await database.modifyRecords(saving: [record], deleting: [])
     }
     public func deleteEvent(_ event: Event) async throws { }
 }
