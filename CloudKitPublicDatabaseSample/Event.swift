@@ -13,6 +13,7 @@ struct Event {
     let venue: String
     let description: String
     let date: Date
+  
     init(id: String = UUID().uuidString, title: String, venue: String, description: String, date: Date) {
         self.id = id
         self.title = title
