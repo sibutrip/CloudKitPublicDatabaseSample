@@ -25,6 +25,7 @@ class CloudKitService {
         
         try await database.save(record)
     }
+  
     public func fetchEvents() async throws -> [Event] {
         let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: "Event", predicate: predicate)
@@ -50,6 +51,7 @@ class CloudKitService {
         }
         return events
     }
+  
     public func updateEvent(_ event: Event) async throws {
         guard let fetchedRecord = try? await database.record(for: .init(recordName: event.id)) else {
             throw CloudKitServiceError.recordNotInDatabase
@@ -63,6 +65,7 @@ class CloudKitService {
         
         _ = try await database.modifyRecords(saving: [record], deleting: [])
     }
+  
     public func deleteEvent(_ event: Event) async throws {
         guard let fetchedRecord = try? await database.record(for: .init(recordName: event.id)) else {
             throw CloudKitServiceError.recordNotInDatabase

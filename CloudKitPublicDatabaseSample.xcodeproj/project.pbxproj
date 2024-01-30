@@ -13,6 +13,7 @@
 		74CB1BA12B694118005C7F15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CB1BA02B694118005C7F15 /* Preview Assets.xcassets */; };
 		74CB1BA82B6941E4005C7F15 /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CB1BA72B6941E4005C7F15 /* CloudKitService.swift */; };
 		74CB1BAB2B69427F005C7F15 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CB1BAA2B69427F005C7F15 /* Event.swift */; };
+		74CB1BAD2B694B48005C7F15 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CB1BAC2B694B48005C7F15 /* EventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		74CB1BA72B6941E4005C7F15 /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
 		74CB1BA92B6941FC005C7F15 /* CloudKitPublicDatabaseSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitPublicDatabaseSample.entitlements; sourceTree = "<group>"; };
 		74CB1BAA2B69427F005C7F15 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		74CB1BAC2B694B48005C7F15 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				74CB1B992B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift */,
 				74CB1B9B2B694117005C7F15 /* ContentView.swift */,
 				74CB1BA72B6941E4005C7F15 /* CloudKitService.swift */,
+				74CB1BAC2B694B48005C7F15 /* EventViewModel.swift */,
 				74CB1BAA2B69427F005C7F15 /* Event.swift */,
 				74CB1B9D2B694118005C7F15 /* Assets.xcassets */,
 				74CB1B9F2B694118005C7F15 /* Preview Content */,
@@ -148,6 +151,7 @@
 				74CB1BA82B6941E4005C7F15 /* CloudKitService.swift in Sources */,
 				74CB1B9C2B694117005C7F15 /* ContentView.swift in Sources */,
 				74CB1B9A2B694117005C7F15 /* CloudKitPublicDatabaseSampleApp.swift in Sources */,
+				74CB1BAD2B694B48005C7F15 /* EventViewModel.swift in Sources */,
 				74CB1BAB2B69427F005C7F15 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
