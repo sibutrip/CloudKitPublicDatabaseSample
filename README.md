@@ -34,13 +34,18 @@ struct YourTypeName {
     // etc
 }
 ```
-3. Add CloudKitService methods that create, read, update, and delete instances of your type.
+3. Add `CloudKitService` methods that [create, read, update, and delete](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) instances of your type.
 ```Swift
-func saveNewType(_ newType: NewType) async throws {
-    // copy implementation from saveEvent(_:)
-    // adjust it to store the properties of your new type
+class CloudKitService {
+    // existing event methods
+
+    func saveNewType(_ newType: NewType) async throws {
+        // copy implementation from saveEvent(_:)
+        // adjust it to store the properties of your new type
+    }
+
+    // other methods for new type
 }
-// etc
 ```
 4. Create a ViewModel to store your type, or (if this new type is related to Events), integrate this type into the existing EventView Model
 
