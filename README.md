@@ -23,7 +23,10 @@ This is a sample app that allows users to add Events to CloudKit's public databa
 2. Make sure that the simulator or device is signed into your iCloud account, and that iCloud Drive is turned on. (You may want to make another iCloud account just for development on the simulator. You can do this on iCloud.com.)
 3. If you just signed in to your iCloud account, you might need to quit the app and reopen it.
 4. Since this is a new container, you probably won't see any events on the view. Try adding an event with the phone or simulator.
-5. Quit the app (don't just put it in the background, but swipe up to close it, or press "stop" on Xcode if it's running) and reopen it. Do you see the event you just added?
+6. Quit the app (don't just put it in the background, but swipe up to close it, or press "stop" on Xcode if it's running) and reopen it. Do you see the event you just added?
+> [!TIP]
+> It's possible that you will see an error like "field recordName is not marked queryable." To solve this, return to your CloudKit console for your app's container. Select "Indexes" on the right, and select your Event type. Add a new index for recordName to be queryable.
+> ![Image of CloudKit console showing adding an index for recordName.](Images/recordName.png)
 
 ## Adding Your Own Data Types
 1. Create a new file named like `YourTypeName.swift`.
