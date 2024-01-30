@@ -33,7 +33,7 @@ class CloudKitService {
         // Make a CKRecord, which is a type CloudKit is able to store.
         let record = CKRecord(recordType: "Event", recordID: .init(recordName: event.id))
         
-        // Store the properties of our Event in the CKRecord.
+        // Store the properties of our Event as fields in the CKRecord
         // (CKRecord works like a dictionary, with keys and values.)
         record["title"] = event.title
         record["venue"] = event.venue
