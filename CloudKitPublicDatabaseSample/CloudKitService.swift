@@ -11,7 +11,9 @@ class CloudKitService {
     let container = CKContainer(identifier: "iCloud.com.CoryTripathy.CloudKitShare")
     lazy var database = container.publicCloudDatabase
     public func saveEvent(_ event: Event) async throws { }
-    public func fetchEvents() -> [Event] async throws { }
+    public func fetchEvents() async throws -> [Event] { 
+        return []
+    }
     public func updateEvent(_ event: Event) async throws { }
     public func deleteEvent(_ event: Event) async throws { }
 }
