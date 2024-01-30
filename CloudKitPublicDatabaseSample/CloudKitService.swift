@@ -13,8 +13,8 @@ class CloudKitService {
         case recordNotInDatabase
     }
     
-    let container = CKContainer(identifier: "iCloud.com.CoryTripathy.CloudKitShare")
-    lazy var database = container.publicCloudDatabase
+    private let container = CKContainer(identifier: "iCloud.com.CoryTripathy.CloudKitShare")
+    private lazy var database = container.publicCloudDatabase
     
     public func saveEvent(_ event: Event) async throws {
         let record = CKRecord(recordType: "Event", recordID: .init(recordName: event.id))
